@@ -22,7 +22,6 @@ exports.postData = async (req, res, next) => {
 
             `,
         }
-
         transporter.sendMail(mailOptions,(err, info)=>{
           if(err){
               console.log("erro",err.message);
